@@ -13,6 +13,6 @@ app.listen(PORT, () => {
     console.log('server started on port ', PORT)
 })
 
-app.get('/', (_, res) => {
+app.get('/', (_: any, res: any) => {
     res.status(200).send('SaluteJS')
 })
